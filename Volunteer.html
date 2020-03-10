@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Apply for Volunteering</title>
+</head>
+<header>
+	<nav align="right">
+		<a href="index.html">Home</a> &nbsp; |
+		<a href="past_events.html">Past Events</a> &nbsp; |
+		<a href="contact_us.html">Contact Us</a> &nbsp; |
+		<a href="login.html">Login</a> &nbsp; |
+		<a href="upcoming-events.html">Upcoming Events</a> &nbsp; |
+		<a href="Past_Photos.html">Gallery</a>
+
+	</nav>
+	<a href="index.html"><img src="images/logo.jpeg" alt="" height="20%" width="10%"></a>
+</header>
+
+<body>
+	<form align="center">
+
+		<input type="hidden" name=" " value=" ">
+
+		<h3> Geek Point Registration &gt; Volunteer Registration</h3>
+
+		<p>Thanks for your interest! This short, single page form which helps us connect you with the right people.</p>
+
+		<table align="center">
+			<tr>
+				<td><label for="firstname">First name : </label></td>
+				<td>
+					<input type="text" name="firstname" maxlength="128" value="" id="firstname"
+						placeholder="First name">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="lastname">Last name : </label></td>
+				<td>
+					<input type="text" name="lastname" maxlength="128" value="" id="lastname" placeholder="Last name">
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="organisation">Company's name : </label></td>
+				<td>
+					<input type="text" name="organisation" maxlength="128" value="" id="organisation"
+						placeholder="Company name">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="username">Email address : </label></td>
+				<td>
+					<input type="text" name="username" maxlength="128" value="" id="username"
+						placeholder="Email address">
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="username_verify">Re-enter Email address : </label></td>
+				<td>
+					<input type="text" name="username_verify" maxlength="128" value="" id="username_verify"
+						placeholder="Re-enter email address">
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="contact">Contact No. : </label></td>
+				<td>
+					<input type="number" name="contactNo" value="" id="contact_No" placeholder="Enter contact no">
+				</td>
+			</tr>
+
+			<tr>
+				<td><label for="password_verify">Why should we choose you ? : </label></td>
+				<td>
+					<textarea type="text" name="explanation" value="" id="Explain_yourself" rows="3" cols="22"
+						placeholder="Explain"></textarea>
+				</td>
+			</tr>
+		</table>
+		<table align="center">
+			<tr>
+				<td>
+					<p>By clicking the button below and creating an account, you agree to our <a
+							href="Code_Of_Conduct.html" title="Code of Conduct">Code of Conduct</a>.</p>
+					<input type="submit" value="Agree & Submit" onclick="this.disabled=true; this.form.submit();">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+<footer align="center">
+	<hr />
+	<b>Registered office:</b> 205 Humber College Blvd, Etobicoke, ON M9W 5L7
+</footer>
+
+</html>

@@ -5,52 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        .header {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        body {
+            background-image: url('contact.jpg');
+        }
+
+
+        .button {
+            background-color: #008CBA;
+            ;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+
+        input.focus {
+            color: black;
+        }
+
+
+        input[type=text],
+        input[type=number] {
+            width: 330px;
+            padding: 12px 20px 12px 40px;
+            color: rgb(32, 143, 253);
+        }
+
+        #tbl {
+            background-color: lightyellow;
+            width: auto;
+            margin: auto;
+            border: 3px solid rgb(8, 199, 251);
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            font-size: 20px;
+        }
+    </style>
     <title>Apply for Sponsor</title>
 </head>
 
 <body>
     <header>
-        <nav align="right">
-            <a href="index.html">Home</a> &nbsp; |
-            <a href="past_events.html">Past Events</a> &nbsp; |
-            <a href="contact_us.html">Contact Us</a> &nbsp; |
-            <a href="login.html">Login</a> &nbsp; |
-            <a href="upcoming-events.html">Upcoming Events</a> &nbsp; |
-			<a href="Past_Photos.html">Gallery</a>
-
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="past_events.html">Past Events</a>
+            <a href="contact_us.html">Contact Us</a></li>
+            <a href="login.html">Login</a>
+            <a href="upcoming-events.html">Upcoming Events</a>
+            <a href="Past_Photos.html">Gallery</a>
         </nav>
         <a href="index.html"><img src="images/logo.jpeg" alt="" height="20%" width="10%"></a>
     </header>
 
 
-    <table align="center">
+    <table id="tbl" align="center">
 
         <form action="success.html" method="get">
 
             <h1 align="center">Fill in to Sign up as a Sponsor!</h1>
             <tr>
                 <td>First Name: </td>
-                <td><input type="text" name="fname" id="fname"></td>
+                <td><input type="text" name="fname" id="fname" placeholder="Enter First name"></td>
             </tr>
             <tr>
                 <td>Last Name: </td>
-                <td><input type=" text" name="lname" id="lname"></td>
+                <td><input type="text" name="lname" id="lname" placeholder="Enter Last name"></td>
             </tr>
 
             <tr>
                 <td>Email:</td>
-                <td><input type="email" name="email" id="email" placeholder="Mandatory"
-                        required</td> </tr> <tr>
+                <td><input type="text" name="email" id="email" placeholder="Enter Email Address" required></td>
+            </tr>
+            <tr>
                 <td>Phone Number: </td>
-                <td><input type="number" name="phone" id="phone"></td>
+                <td><input type="text" name="phone" id="phone" placeholder="Enter Phone Number"></td>
             </tr>
             <tr>
                 <td>Organization:</td>
-                <td><input type="text" name="organization" id="organization"></td>
-            </tr>
-            <tr>
-                <td>Phone Number: </td>
-                <td><input type=" text" name="phone" id="phone"></td>
+                <td><input type="text" name="organization" id="organization" placeholder="Enter your company name"></td>
             </tr>
             <tr>
                 <td>Sponsorship Level:</td>
@@ -68,22 +117,24 @@
                     <input type="radio" value="">Yes
                     <input type="radio" value="no">No
                 </td>
-
             </tr>
-
-            <tr align="center">
-
-                <td><input type="submit" value="Submit" id="submit" name="submit">
-                    <input type="reset" value="Reset" id="reset" name="reset">
-                </td>
-
-            </tr>
-        </form>
     </table>
+    <table align="center">
+        <tr>
+            <td>
+                <input class="button" type="submit" name="btnSubmit" value="OK">
+                <input class="button" type="reset" name="btnreset">
+            </td>
+        </tr>
+    </table>
+    </form>
+
 </body>
 <footer>
     <hr />
-    <b>Registered office:</b> 205 Humber College Blvd, Etobicoke, ON M9W 5L7
+    <center>
+        <b>Registered office:</b> 205 Humber College Blvd, Etobicoke, ON M9W 5L7
+    </center>
 </footer>
 
 </html>

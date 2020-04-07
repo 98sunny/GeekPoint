@@ -4,27 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/main.css">
+    <style>
+        body {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+        body {
+			background-image: url('contact.jpg');
+		}
+
+
+        #img1 {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #speaker {
+            border-radius: 30%;
+        }
+
+        .typewriter h1 {
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid orange;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .15em;
+            /* Adjust as needed */
+            animation:
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: orange;
+            }
+        }
+    </style>
     <title>React Conference</title>
 </head>
 
 <body>
     <header>
-        <nav align="right">
-            <a href="index.html">Home</a> &nbsp; |
-            <a href="past_events.html">Past Events</a> &nbsp; |
-            <a href="contact_us.html">Contact Us</a> &nbsp; |
-            <a href="login.html">Login</a> &nbsp; |
-            <a href="upcoming-events.html">Upcoming Events</a> &nbsp; |
-				<a href="Past_Photos.html">Gallery</a>
-
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="past_events.html">Past Events</a>
+            <a href="contact_us.html">Contact Us</a></li>
+            <a href="login.html">Login</a>
+            <a href="upcoming-events.html">Upcoming Events</a>
+            <a href="Past_Photos.html">Gallery</a>
         </nav>
         <a href="index.html"><img src="images/logo.jpeg" alt="" height="11%" width="10%"></a>
     </header>
-    <h1>ReactFoo-VueDay Brampton edition</h1>
+    <div class="typewriter" align="center">
+        <h1>ReactFoo-VueDay Brampton edition</h1>
+    </div>
     <h3>React and Vue for performance engineering and front-end development</h3>
     <br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img
-        src="images/react.jpeg" style="text-align:left" width="375px" height="250px" alt="">
+    <img id="img1" src="images/react.jpeg" style="text-align:left" width="375px" height="250px" alt="">
     <br>
     <h2>About the event</h2>
     <h4 text-align="left">React and Vue are becoming increasingly popular for front-end application development.</h4>
@@ -54,7 +116,7 @@
             <img src="images/deque.png" alt="">
             <h2>Speaker:</h2>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="images/brayan.png" alt=""> <br>
+            <img id="speaker" src="images/brayan.png" alt=""> <br>
             <h2>Venue:</h2><br>
             <address> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 Written by <a href="mailto:user@geekpoint.com">Geek Point</a>.<br>

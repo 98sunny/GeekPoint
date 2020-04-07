@@ -6,15 +6,65 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style/main.css">
+	<style>
+		.header {
+			background-color: #F1F1F1;
+			text-align: center;
+			padding: 20px;
+		}
+		body {
+			background-image: url('contact.jpg');
+		}
+
+		a:hover {
+            color: #ff0000;
+        }
+
+		.button {
+			background-color: #008CBA;;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			border-radius: 25px;
+			}
+
+		input[type=text],
+		input[type=number] {
+			width: 330px;
+			padding: 12px 20px 12px 40px;
+			color: rgb(32, 143, 253);
+		}
+
+		#tbl {
+			background-color: lightyellow;
+			width: auto;
+			margin: auto;
+			border: 3px solid rgb(8, 199, 251);
+		}
+
+		td {
+			border: 1px solid #ddd;
+			padding: 8px;
+			font-size: 20px;
+		}
+	</style>
 	<title>Apply for Volunteering</title>
 </head>
 <header>
-	<nav align="right">
-		<a href="index.html">Home</a> &nbsp; |
-		<a href="past_events.html">Past Events</a> &nbsp; |
-		<a href="contact_us.html">Contact Us</a> &nbsp; |
-		<a href="login.html">Login</a> &nbsp; |
-		<a href="upcoming-events.html">Upcoming Events</a> &nbsp; |
+	<nav class="topnav">
+
+		<a href="index.html">Home</a>
+		<a href="past_events.html">Past Events</a>
+		<a href="contact_us.html">Contact Us</a></li>
+		<a href="login.html">Login</a>
+		<a href="upcoming-events.html">Upcoming Events</a>
 		<a href="Past_Photos.html">Gallery</a>
 
 	</nav>
@@ -26,22 +76,22 @@
 
 		<input type="hidden" name=" " value=" ">
 
-		<h3> Geek Point Registration &gt; Volunteer Registration</h3>
+		<h2> Geek Point Registration &gt; Volunteer Registration</h2>
 
 		<p>Thanks for your interest! This short, single page form which helps us connect you with the right people.</p>
 
-		<table align="center">
+		<table align="center" id="tbl">
 			<tr>
 				<td><label for="firstname">First name : </label></td>
 				<td>
 					<input type="text" name="firstname" maxlength="128" value="" id="firstname"
-						placeholder="First name">
+						placeholder="Enter First name">
 				</td>
 			</tr>
 			<tr>
 				<td><label for="lastname">Last name : </label></td>
 				<td>
-					<input type="text" name="lastname" maxlength="128" value="" id="lastname" placeholder="Last name">
+					<input type="text" name="lastname" maxlength="128" value="" id="lastname" placeholder="Enter Last name">
 				</td>
 			</tr>
 
@@ -49,14 +99,14 @@
 				<td><label for="organisation">Company's name : </label></td>
 				<td>
 					<input type="text" name="organisation" maxlength="128" value="" id="organisation"
-						placeholder="Company name">
+						placeholder="Enter Company name">
 				</td>
 			</tr>
 			<tr>
 				<td><label for="username">Email address : </label></td>
 				<td>
 					<input type="text" name="username" maxlength="128" value="" id="username"
-						placeholder="Email address">
+						placeholder="Enter Email address">
 				</td>
 			</tr>
 
@@ -76,7 +126,7 @@
 			</tr>
 
 			<tr>
-				<td><label for="password_verify">Why should we choose you ? : </label></td>
+				<td><label for="whychoose">Why should we choose you ? : </label></td>
 				<td>
 					<textarea type="text" name="explanation" value="" id="Explain_yourself" rows="3" cols="22"
 						placeholder="Explain"></textarea>
@@ -86,9 +136,9 @@
 		<table align="center">
 			<tr>
 				<td>
-					<p>By clicking the button below and creating an account, you agree to our <a
-							href="Code_Of_Conduct.html" title="Code of Conduct">Code of Conduct</a>.</p>
-					<input type="submit" value="Agree & Submit" onclick="this.disabled=true; this.form.submit();">
+					<p>By clicking the button below and creating an account, you agree to our 
+						<a href="Code_Of_Conduct.html" title="Code of Conduct">Code of Conduct</a>.</p>
+					<input class="button" type="submit" value="Agree & Submit" onclick="this.disabled=true; this.form.submit();">
 				</td>
 			</tr>
 		</table>

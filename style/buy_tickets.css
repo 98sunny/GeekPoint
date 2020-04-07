@@ -1,0 +1,26 @@
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+input[type=text],input[type=number] {
+   width: 330px;
+  padding: 12px 20px 12px 40px;
+  color: rgb(32, 143, 253);
+}
+
+table{
+    background-color:lightyellow;
+    width:auto;
+    margin: auto;
+    border: 3px solid rgb(8, 199, 251);
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-size: 20px;
+}
+
+
+

@@ -1,88 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <title>Login and Registration Form For Volunteer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login|Signup</title>
+    <meta name="description" content="Login and Registration Form with HTML5 and CSS3" />
+    <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style/demo.css" />
+    <link rel="stylesheet" type="text/css" href="style/login.css" />
+    <link rel="stylesheet" type="text/css" href="style/animate-custom.css" />
+    <link rel="stylesheet" href="style/main.css">
 </head>
-<header>
-    <nav align="right">
-        <a href="index.html">Home</a> &nbsp; |
-        <a href="past_events.html">Past Events</a> &nbsp; |
-        <a href="contact_us.html">Contact Us</a> &nbsp; |
-        <a href="login.html">Login</a> &nbsp; |
-        <a href="upcoming-events.html">Upcoming Events</a> &nbsp; |
-				<a href="Past_Photos.html">Gallery</a>
-
-    </nav>
-    <a href="index.html"><img src="images/logo.jpeg" alt="" height="20%" width="10%"></a>
-</header>
 
 <body>
-    <img src="images/login.jpg" alt="Welcome picture" width="50%" height="500px">
+    <header>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="past_events.html">Past Events</a>
+            <a href="contact_us.html">Contact Us</a></li>
+            <a href="login.html">Login</a>
+            <a href="upcoming-events.html">Upcoming Events</a>
+            <a href="Past_Photos.html">Gallery</a>
 
-    <table align="right">
-        <tr>
-            <td>
-                <div id="login">
-                    <form action="success.html" method="post" id="signupForm">
-                        <table>
-                            <h3>Fill in to Sign in!</h3>
-                            <tr>
-                                <td>Username: </td>
-                                <td><input type="text" name="name" id="" placeholder="">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Password: </td>
-                                <td><input type="password" name="password" id="passsword"></td>
-                            </tr>
-                        </table>
-                    </br>
-                        <input type="submit" value="Login" id="login" name="login">
-                        <input type="reset" value="Reset" id="reset" name="reset">
-                    </form>
+        </nav>
+        <a href="index.html"><img src="images/logo.jpeg" alt="" height="15%" width="10%"></a>
+    </header>
+    <div class="container">
+        <!-- Codrops top bar -->
+        <div class="codrops-top">
+
+
+            <div class="clr"></div>
+        </div>
+        <!--/ Codrops top bar -->
+        <header>
+            <h1>Login and Registration Form</h1>
+            <nav class="codrops-demos">
+                <span>Click <strong>"Join us"</strong> If you are New</span>
+
+            </nav>
+        </header>
+        <section>
+            <div id="container_demo">
+
+                <a class="hiddenanchor" id="toregister"></a>
+                <a class="hiddenanchor" id="tologin"></a>
+                <div id="wrapper">
+                    <div id="login" class="animate form">
+                        <form>
+                            <h1>Log in</h1>
+                            <p>
+                                <label for="username" class="uname" data-icon="u"> Your email or username </label>
+                                <input id="username" name="username" required="required" type="text" />
+                            </p>
+                            <p>
+                                <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                <input id="password" name="password" required="required" type="password" />
+                            </p>
+                            <p class="keeplogin">
+                                <input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" />
+                                <label for="loginkeeping">Keep me logged in</label>
+                            </p>
+                            <p class="login button">
+                                <input type="submit" value="Login" />
+                            </p>
+                            <p class="change_link">
+                                Not a member yet ?
+                                <a href="#toregister" class="to_register">Join us</a>
+                            </p>
+                        </form>
+                    </div>
+
+                    <div id="register" class="animate form">
+                        <form>
+                            <h1> Sign up </h1>
+                            <p>
+                                <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                <input id="usernamesignup" name="usernamesignup" required="required" type="text" />
+                            </p>
+                            <p>
+                                <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
+                                <input id="emailsignup" name="emailsignup" required="required" type="email" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                <input id="passwordsignup" name="passwordsignup" required="required" type="password" />
+                            </p>
+                            <p>
+                                <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your
+                                    password </label>
+                                <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required"
+                                    type="password" />
+                            </p>
+                            <p class="signin button">
+                                <input type="submit" value="Sign up" />
+                            </p>
+                            <p class="change_link">
+                                Already a member ?
+                                <a href="#tologin" class="to_register"> Go and log in </a>
+                            </p>
+                        </form>
+                    </div>
 
                 </div>
-            </td>
-            <td>
-                <div id="signup">
-                    <form action="success.html" method="post" id="signupForm">
-                        <table>
-                            <h3>Fill in to Sign up!</h3>
-                            <tr>
-                                <td>First Name: </td>
-                                <td><input type="text" name="fname" id="fname"></td>
-                            </tr>
-                            <tr>
-                                <td>Last Name: </td>
-                                <td><input type=" text" name="lname" id="lname"></td>
-                            </tr>
-                            <tr>
-                                <td>Username: </td>
-                                <td><input type="text" name="name" id="" placeholder="Keep it unique"
-                                       >
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Email:</td>
-                                <td><input type="email" name="email" id="email" placeholder="Mandatory"
-                                        required</td> </tr> <tr>
-                                <td>Phone Number: </td>
-                                <td><input type="number" name="phone" id="phone"></td>
-                            </tr>
-
-                        </table>
-                    </br>
-                        <input type="submit" value="Submit" id="submit" name="submit">
-                        <input type="reset" value="Reset" id="reset" name="reset">
-                    </form>
-                </div>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </section>
+    </div>
 </body>
 <footer align="center">
     <hr />
